@@ -6,6 +6,15 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="esms-options">
+    {
+        "shimMode": true
+    }
+  </script>
+
+  <script type="module" src="polyfills.js"></script>
+
+  <script type="module-shim" src="main.js"></script>
 
   <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 
@@ -15,27 +24,27 @@
           padding-top: 80px;
           padding-left: 10px;
       }
-  
+
       ul {
           list-style-type: none;
           margin: 0;
           padding: 0;
           overflow: hidden;
           background-color: #333;
-  
+
           position: fixed;
           top: 0;
           left: 0;
           width: 100%;
       }
-  
+
       li {
           float: left;
           height: 50px;
           margin-top: auto;
           margin-bottom: auto;
       }
-  
+
       li a {
           display: block;
           color: white;
@@ -44,7 +53,7 @@
           text-decoration: none;
           cursor: pointer;
       }
-  
+
       li a:hover {
           background-color: #111;
       }
